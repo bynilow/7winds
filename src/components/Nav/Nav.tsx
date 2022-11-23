@@ -40,7 +40,7 @@ function Nav() {
             </div>
             <div className="list_projects">
                 {
-                    projectNames.map(i => <ProjectCard name={i} isSelected={false} />)
+                    projectNames.map((i,ind) => <ProjectCard key={ind} name={i} isSelected={false} />)
                 }
             </div>
         </nav>
