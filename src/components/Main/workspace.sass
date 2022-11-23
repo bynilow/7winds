@@ -1,0 +1,72 @@
+.workspace
+    background: #202124;
+    width: 100%;
+    min-height: 100%;
+    
+    display: flex;
+    flex-direction: column;
+
+    border-left: 1px solid #414144;
+
+.tabs
+    border-bottom: 1px solid #414144;
+
+.tabs_inner
+    padding: 10px;
+    height: 44px;
+    display: block flex;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 25%;
+    
+    border-right: 1px solid #414144;
+    
+
+.workspace_name
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: #FFFFFF;
+
+tr
+    display: grid;
+    grid-template-columns: 1.5fr 7fr repeat(4, 2fr);
+    align-items: center;
+
+    position: relative;
+
+    &:not(.table_header)
+        &:after
+            content: '';
+
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            width: 99%;
+            
+            border-top: 1px solid #414144;
+
+
+
+table
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+
+    letter-spacing: 0.1px;
+
+    padding: 0;
+
+.table_header
+    color: #A1A1AA;
+
+.table_data
+    color: #FFFFFF;
+
+td
+    padding: 10px;

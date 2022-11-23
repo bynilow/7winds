@@ -1,24 +1,19 @@
 import React from 'react';
+import Divider from './components/Divder/Divider';
+import Header from './components/Header/Header';
+import WorkSpace from './components/Main/WorkSpace';
+import Nav from './components/Nav/Nav';
 import logo from './logo.svg';
-import './App.css';
+import "./styles/main.sass"
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <div className="work_space">
+        <Nav />
+        <WorkSpace />
+      </div>
     </div>
   );
 }
